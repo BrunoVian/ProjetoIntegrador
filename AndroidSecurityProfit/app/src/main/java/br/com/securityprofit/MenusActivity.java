@@ -1,62 +1,50 @@
 package br.com.securityprofit;
 
-import android.os.Bundle;
-import android.view.Menu;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-import br.com.securityprofit.databinding.ActivityMenusBinding;
-
-public class MenusActivity extends AppCompatActivity {
-
-    private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMenusBinding binding;
+public class MenusActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menus);
 
-        binding = ActivityMenusBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        DrawerLayout drawer = binding.drawerLayout;
-        NavigationView navigationView = binding.navMenus;
-
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
-                .setOpenableLayout(drawer)
-                .build();
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menus);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menus, menu);
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.nav_inicio) {
+
+            Intent intent = new Intent(MenusActivity.this, MenuActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_pessoa) {
+            Intent intent = new Intent(MenusActivity.this, PessoaActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_veiculo) {
+            Intent intent = new Intent(MenusActivity.this, VeiculoActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_usuarios) {
+            Intent intent = new Intent(MenusActivity.this, UsuarioActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_sair){
+            Intent intent = new Intent(MenusActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
         return true;
     }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menus);
-
-        return true;
-    };
-
 }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_login"
+    android:background="@drawable/background_login"
     android:orientation="vertical"
     android:gravity="center_vertical"
     >
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:background="@drawable/border_fundo_edit_login"
+            android:background="@drawable/borda_edit_login"
             />
 
         <TextView
@@ -55,24 +55,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:background="@drawable/border_fundo_edit_login"
+            android:background="@drawable/borda_edit_login"
             android:layout_marginBottom="50dp"
             />
 
 
-    <Button
-        android:id="@+id/btnEntrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:text="Entrar"
-        android:textStyle="normal"
-        android:textSize="20dp"
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:text="Entrar"
+            android:textStyle="normal"
+            android:textSize="20dp"
 
-        style="@style/GreenButton"
-        android:backgroundTint="#088A08"
-        android:textAllCaps="false"
-        />
+            style="@style/GreenButton"
+            android:backgroundTint="#088A08"
+            android:textAllCaps="false"
+            />
 
     </LinearLayout>
 

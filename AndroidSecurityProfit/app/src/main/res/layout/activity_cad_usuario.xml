@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/fundo_telas"
     android:orientation="vertical"
-    tools:context=".CadPessoaFisicaActivity">
-
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -28,7 +27,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/left_button"
+                android:id="@+id/btnMenuToolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -40,8 +39,6 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,7 +70,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:padding="23dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
         </LinearLayout>
 
@@ -144,7 +141,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
 
             <TextView
@@ -165,7 +162,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -185,7 +182,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -205,7 +202,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
 
 

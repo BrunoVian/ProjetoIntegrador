@@ -1,14 +1,14 @@
 package br.com.securityprofit;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CadPessoObservacaoActivity extends AppCompatActivity {
+import android.os.Bundle;
+
+public class NavHeaderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cad_pesso_observacao);
+        setContentView(R.layout.activity_nav_header);
     }
 }

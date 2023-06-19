@@ -5,23 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
 
 
-public class CadPessoaFisicaActivity extends AppCompatActivity {
+public class CadPessoaObservacaoActivity extends AppCompatActivity {
 
     private ImageButton btnMenuToolbar;
-    private ImageButton btnJuridica;
     private ImageButton btnEndereco;
-    private ImageButton btnObs;
 
-    @SuppressLint("WrongViewCast")
+    private ImageButton btnDados;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cad_pessoa_fisica);
+        setContentView(R.layout.activity_cad_pessoa_observacao);
 
         btnMenuToolbar = findViewById(R.id.btnMenuToolbar);
 
@@ -29,19 +28,7 @@ public class CadPessoaFisicaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, MenusActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        btnJuridica = findViewById(R.id.btnJuridica);
-
-        btnJuridica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaJuridicaActivity.class);
+                Intent intent = new Intent(CadPessoaObservacaoActivity.this, MenusActivity.class);
                 startActivity(intent);
 
             }
@@ -53,19 +40,19 @@ public class CadPessoaFisicaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaEnderecoActivity.class);
+                Intent intent = new Intent(CadPessoaObservacaoActivity.this, CadPessoaEnderecoActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        btnObs = findViewById(R.id.btnObs);
+        btnDados = findViewById(R.id.btnDados);
 
-        btnObs.setOnClickListener(new View.OnClickListener() {
+        btnDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaObservacaoActivity.class);
+                Intent intent = new Intent(CadPessoaObservacaoActivity.this, CadPessoaFisicaActivity.class);
                 startActivity(intent);
 
             }

@@ -14,9 +14,10 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/toolbar_padrao"
 
-        app:titleTextColor="@color/white"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@color/white">
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,19 +26,18 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/left_button"
+                android:id="@+id/btnMenuToolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:paddingLeft="0dp"
-                android:paddingVertical="15dp"
                 android:background="@color/toolbar_padrao"
+                android:paddingVertical="15dp"
+                android:paddingLeft="0dp"
                 android:src="@drawable/menu" />
 
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,6 +60,7 @@
             />
 
         <Button
+            android:id="@+id/btnNvUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -86,13 +87,14 @@
         android:drawableLeft="@drawable/lupa"
         android:drawablePadding="10dp"
 
-        android:background="@drawable/forma_edittext"
+        android:background="@drawable/forma_edit_text"
         />
     <GridView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/forma_edittext"
-        android:layout_margin="12dp"/>
+        android:background="@drawable/forma_edit_text"
+        android:layout_margin="12dp"
+        android:visibility="visible"/>
 
 
 

@@ -10,7 +10,7 @@
         <item
             android:id="@+id/nav_inicio"
             android:icon="@drawable/home"
-            android:title="@string/menu_home" />
+            android:title="inicio" />
         <item
             android:id="@+id/nav_escolta"
             android:icon="@drawable/escolta"
@@ -38,7 +38,21 @@
         <item
             android:id="@+id/nav_usuarios"
             android:icon="@drawable/usuario"
-            android:title="Usuários" />
+            android:title="Usuários"
+            />
+        <item android:id="@+id/menu_divider"
+            android:title=""
+             />
+        <item android:id="@+id/sjjs"
+            android:title=""
+            android:enabled="false"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/sair"
+            android:title="Sair"
 
+            />
     </group>
+
 </menu>

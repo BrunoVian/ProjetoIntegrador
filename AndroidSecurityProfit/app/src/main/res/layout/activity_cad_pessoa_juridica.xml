@@ -28,7 +28,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/left_button"
+                android:id="@+id/btnMenuToolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -40,8 +40,6 @@
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,6 +47,7 @@
         android:paddingVertical="10dp">
 
         <Button
+            android:id="@+id/btnFisica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
@@ -63,6 +62,7 @@
             />
 
         <Button
+            android:id="@+id/btnJuridica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -139,7 +139,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
 
             <TextView
@@ -160,7 +160,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -180,7 +180,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -200,7 +200,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -240,7 +240,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/border_fundo_edittext" />
+                android:background="@drawable/border_fundo_edit_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -324,6 +324,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnDados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -348,6 +349,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnEndereco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -373,6 +375,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnObs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"

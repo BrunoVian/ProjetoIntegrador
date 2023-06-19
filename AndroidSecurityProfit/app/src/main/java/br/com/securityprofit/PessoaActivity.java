@@ -1,28 +1,48 @@
 package br.com.securityprofit;
 
-import android.os.Bundle;
-import android.view.Menu;
-import android.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class PessoaActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
+    private ImageButton btnMenuToolbar;
+    private Button btnNvPessoa;
 
-    private Menu menu_main;
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pessoa);
 
-        toolbar = findViewById(R.id.toolbar);
-        getSupportActionBar().setTitle("Pessoa");
+        btnMenuToolbar = findViewById(R.id.btnMenuToolbar);
 
+        btnMenuToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(PessoaActivity.this, CadPessoaJuridicaActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        btnNvPessoa = findViewById(R.id.btnNvPessoa);
+
+        btnNvPessoa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(PessoaActivity.this, CadPessoaFisicaActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
-
-
-
-
 }
