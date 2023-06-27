@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/frmIncicio"
+        android:name="br.com.securityprofit.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/activity_menu" />
+
+    <fragment
+        android:id="@+id/Escolta"
+        android:name="br.com.securityprofit.ui.home.HomeFragment"
+        android:label="Escolta"
+        tools:layout="@layout/activity_usuario" />
+
+    <fragment
+        android:id="@+id/frmVeiculo"
+        android:name="br.com.securityprofit."
+        android:label="Veiculo"
+        tools:layout="@layout/activity_veiculo" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="br.com.securityprofit.ui.slideshow.SlideshowFragment"
+        android:label="Pessoa"
+        tools:layout="@layout/activity_pessoa" />
+
+</navigation>

@@ -349,7 +349,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnEndereco"
+                android:id="@+id/btnEndereco1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -375,7 +375,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnObs"
+                android:id="@+id/btnObs1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"

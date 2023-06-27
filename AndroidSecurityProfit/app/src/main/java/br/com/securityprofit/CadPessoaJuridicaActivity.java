@@ -12,42 +12,20 @@ public class CadPessoaJuridicaActivity extends AppCompatActivity {
 
     private ImageButton btnMenuToolbar;
     private ImageButton btnFisica;
-    private ImageButton btnEndereco;
-    private ImageButton btnObs;
+    private ImageButton btnEndereco1;
+    private ImageButton btnObs1;
 
-    @SuppressLint("WrongViewCast")
+    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cad_pessoa_juridica);
 
-        btnMenuToolbar = findViewById(R.id.btnMenuToolbar);
 
-        btnMenuToolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent = new Intent(CadPessoaJuridicaActivity.this, MenusActivity.class);
-                startActivity(intent);
+        btnEndereco1 = findViewById(R.id.btnEndereco1);
 
-            }
-        });
-
-        btnFisica = findViewById(R.id.btnFisica);
-
-        btnFisica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(CadPessoaJuridicaActivity.this, CadPessoaFisicaActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        btnEndereco = findViewById(R.id.btnEndereco);
-
-        btnEndereco.setOnClickListener(new View.OnClickListener() {
+        btnEndereco1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -57,9 +35,9 @@ public class CadPessoaJuridicaActivity extends AppCompatActivity {
             }
         });
 
-        btnObs = findViewById(R.id.btnObs);
+        btnObs1 = findViewById(R.id.btnObs1);
 
-        btnObs.setOnClickListener(new View.OnClickListener() {
+        btnObs1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -68,5 +46,8 @@ public class CadPessoaJuridicaActivity extends AppCompatActivity {
 
             }
         });
+
+
+        };
+
     }
-}

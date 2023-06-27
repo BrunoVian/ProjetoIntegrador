@@ -9,17 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class VeiculoActivity extends AppCompatActivity {
+public class Usuario_Activity extends AppCompatActivity {
 
     private ImageButton btnMenuToolbar;
-    private Button btnNvVeiculo;
+    private Button btnNvUsuario;
 
-    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_veiculo);
-
+        setContentView(R.layout.activity_usuario);
 
         btnMenuToolbar = findViewById(R.id.btnMenuToolbar);
 
@@ -27,24 +26,22 @@ public class VeiculoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(VeiculoActivity.this, MenusActivity.class);
+                Intent intent = new Intent(Usuario_Activity.this, MenusActivity.class);
                 startActivity(intent);
 
             }
         });
 
+        btnNvUsuario = findViewById(R.id.btnNvUsuario);
 
-        btnNvVeiculo = findViewById(R.id.btnNvVeiculo);
-
-        btnNvVeiculo.setOnClickListener(new View.OnClickListener() {
+        btnNvUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(VeiculoActivity.this, CadVeiculoActivity.class);
+                Intent intent = new Intent(Usuario_Activity.this, CadUsuarioActivity.class);
                 startActivity(intent);
 
             }
         });
-
     }
 }

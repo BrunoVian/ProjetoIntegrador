@@ -11,10 +11,10 @@ import android.widget.ImageButton;
 
 public class CadPessoaObservacaoActivity extends AppCompatActivity {
 
-    private ImageButton btnMenuToolbar;
-    private ImageButton btnEndereco;
+    private ImageButton btnMenuToolbar2;
+    private ImageButton btnEndereco2;
 
-    private ImageButton btnDados;
+    private ImageButton btnDados2;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -22,9 +22,9 @@ public class CadPessoaObservacaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cad_pessoa_observacao);
 
-        btnMenuToolbar = findViewById(R.id.btnMenuToolbar);
+        btnMenuToolbar2 = findViewById(R.id.btnMenuToolbar2);
 
-        btnMenuToolbar.setOnClickListener(new View.OnClickListener() {
+        btnMenuToolbar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -34,9 +34,13 @@ public class CadPessoaObservacaoActivity extends AppCompatActivity {
             }
         });
 
-        btnEndereco = findViewById(R.id.btnEndereco);
 
-        btnEndereco.setOnClickListener(new View.OnClickListener() {
+
+
+
+        btnEndereco2 = findViewById(R.id.btnEndereco2);
+
+        btnEndereco2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -46,9 +50,9 @@ public class CadPessoaObservacaoActivity extends AppCompatActivity {
             }
         });
 
-        btnDados = findViewById(R.id.btnDados);
+        btnDados2 = findViewById(R.id.btnDados2);
 
-        btnDados.setOnClickListener(new View.OnClickListener() {
+        btnDados2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -57,5 +61,7 @@ public class CadPessoaObservacaoActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

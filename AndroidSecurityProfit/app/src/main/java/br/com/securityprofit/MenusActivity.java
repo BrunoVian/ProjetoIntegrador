@@ -29,16 +29,16 @@ public class MenusActivity extends AppCompatActivity implements NavigationView.O
             Intent intent = new Intent(MenusActivity.this, MenuActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_pessoa) {
-            Intent intent = new Intent(MenusActivity.this, PessoaActivity.class);
+        } else if (id == R.id.nav_pesso) {
+            Intent intent = new Intent(MenusActivity.this, Pessoa_Activity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_veiculo) {
-            Intent intent = new Intent(MenusActivity.this, VeiculoActivity.class);
+            Intent intent = new Intent(MenusActivity.this, Veiculo_Activity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_usuarios) {
-            Intent intent = new Intent(MenusActivity.this, UsuarioActivity.class);
+            Intent intent = new Intent(MenusActivity.this, Usuario_Activity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_sair){

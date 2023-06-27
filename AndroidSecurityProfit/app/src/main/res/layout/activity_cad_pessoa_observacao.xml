@@ -27,7 +27,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/btnMenuToolbar"
+                android:id="@+id/btnMenuToolbar2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -119,6 +119,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnDados2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -143,6 +144,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnEndereco2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"

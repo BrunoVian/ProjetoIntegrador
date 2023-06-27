@@ -4,40 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PessoaActivity"
+    tools:context=".Pessoa_Activity"
     android:orientation="vertical"
     android:background="@color/fundo_telas">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/toolbar_padrao"
-
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:titleTextColor="@color/white">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="start"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/btnMenuToolbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:background="@color/toolbar_padrao"
-                android:paddingVertical="15dp"
-                android:paddingLeft="0dp"
-                android:src="@drawable/menu" />
-
-        </LinearLayout>
-
-    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,11 +60,14 @@
         android:background="@drawable/forma_edit_text"
         />
     <GridView
+        android:id="@+id/gridVeiculo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="600dp"
         android:background="@drawable/forma_edit_text"
         android:layout_margin="12dp"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        android:rowCount="15"
+        />
 
 
 

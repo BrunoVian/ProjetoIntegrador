@@ -16,4 +16,13 @@
         <item name="windowNoTitle">true</item>
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
     </style>
+
+    <style name="Theme.AndroidSecurityProfit.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AndroidSecurityProfit.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AndroidSecurityProfit.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class PessoaActivity extends AppCompatActivity {
+public class Pessoa_Activity extends AppCompatActivity {
 
     private ImageButton btnMenuToolbar;
     private Button btnNvPessoa;
@@ -26,7 +26,7 @@ public class PessoaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(PessoaActivity.this, CadPessoaJuridicaActivity.class);
+                Intent intent = new Intent(Pessoa_Activity.this, MenusActivity.class);
                 startActivity(intent);
 
             }
@@ -39,7 +39,7 @@ public class PessoaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(PessoaActivity.this, CadPessoaFisicaActivity.class);
+                Intent intent = new Intent(Pessoa_Activity.this, CadPessoaFisicaActivity.class);
                 startActivity(intent);
 
             }

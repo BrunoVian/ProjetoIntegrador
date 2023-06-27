@@ -13,11 +13,12 @@ import android.widget.ImageButton;
 public class CadPessoaFisicaActivity extends AppCompatActivity {
 
     private ImageButton btnMenuToolbar;
-    private ImageButton btnJuridica;
+    private ImageButton btnJuridica1;
     private ImageButton btnEndereco;
-    private ImageButton btnObs;
+    private ImageButton btnObs3;
 
-    @SuppressLint("WrongViewCast")
+
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,17 +36,6 @@ public class CadPessoaFisicaActivity extends AppCompatActivity {
             }
         });
 
-        btnJuridica = findViewById(R.id.btnJuridica);
-
-        btnJuridica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaJuridicaActivity.class);
-                startActivity(intent);
-
-            }
-        });
 
         btnEndereco = findViewById(R.id.btnEndereco);
 
@@ -59,16 +49,21 @@ public class CadPessoaFisicaActivity extends AppCompatActivity {
             }
         });
 
-        btnObs = findViewById(R.id.btnObs);
 
-        btnObs.setOnClickListener(new View.OnClickListener() {
+
+        btnObs3 = findViewById(R.id.btnObs3);
+
+        btnObs3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaObservacaoActivity.class);
+                Intent intent = new Intent(CadPessoaFisicaActivity.this, CadPessoaEnderecoActivity.class);
                 startActivity(intent);
 
             }
         });
+
+
+
     }
 }
